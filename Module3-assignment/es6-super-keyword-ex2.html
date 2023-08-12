@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Person {
+                constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+                }
+
+                introduce() {
+                    console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old.`);
+                }
+            }
+
+            class Student extends Person {
+                constructor(name, age, major) {
+                    super(name, age);
+                    this.major = major;
+                }
+
+                introduce() {
+                    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old. I am majoring in ${this.major}.`);
+                }
+            }
+
+          
+            const john = new Student("Alice", 20, "Computer Science");
+
+            john.introduce();
+
+    </script>
+</body>
+</html>
